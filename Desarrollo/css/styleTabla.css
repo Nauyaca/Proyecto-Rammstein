@@ -1,0 +1,66 @@
+table{
+   width: 75%;
+}
+caption{
+    color: rgb(238, 11, 11);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    line-height: 100px;
+}
+table, th, td{
+border: 1px solid gray;
+border-collapse: collapse;
+padding: 5px;
+
+}
+td{
+text-align: center;
+
+}
+th{
+background-color: rgb(0, 0, 0);
+color: rgb(184, 25, 25);
+}
+tr:nth-child(even){
+    background-color: rgb(102, 14, 14);
+}
+tr:nth-child(odd){
+    background-color: rgb(56, 9, 9);
+}
+ul{
+    width: 200px;
+background-color: rgb(158, 53, 53);
+padding: 20;
+margin: 0;
+overflow: hidden;
+}
+li a{
+    
+float: left;
+display: block;
+color: white;
+text-align: center;
+text-decoration: none;
+}
+li a:hover{
+background-color:black ;
+}
+
+ol{
+    width: 300px;
+    background-color: rgb(0, 0, 0);
+    list-style: none;
+    counter-reset: contador;
+    color: rgb(38, 133, 29);
+}
+ol li{
+counter-increment: contador;
+}
+ol li::before{
+content: counter(contador)  ".-";
+color: rgb(199, 10, 10);
+}
+ol li::after{
+content: "-";
+color: red;
+}
