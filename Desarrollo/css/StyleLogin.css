@@ -1,0 +1,39 @@
+html{
+    height: 100%;
+}
+body{
+    margin: 0%;
+    padding: 0%;
+    background: linear-gradient(#9b9ca0, #792a46 , #bd303e, #d00000, #e85d04 , #f48c06, #ffba08, #03071e) ;
+}
+.Contenedor{
+margin: 50px auto;
+width: 400px;
+padding: 30px;
+background: rgba(61, 49, 49, 0.5);
+border-radius: 30px;
+}
+.Contenedor h2{
+    margin: 0 0 30px;
+    padding: 0px;
+    font-size: 30px;
+    color: #bd303e;
+    text-align: center;
+}
+.Contenedor .Elemento label{
+    color: #f48c06;
+}
+.Contenedor .Elemento input{
+    width: 100%;
+    padding: 10px 0;
+    color: rgb(255, 0, 0);
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid cornflowerblue;
+}
+
+.Elemento input:hover{
+    width: 100%;
+    text-decoration: none;
+    background-color:rgb(224, 240, 6) ;
+    }
