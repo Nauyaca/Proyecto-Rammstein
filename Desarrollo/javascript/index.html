@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generos de la banda</title>
+    <style>
+    .rojo{
+        color: rgb(255, 0, 0);
+    }
+    .amarillo{
+        color: rgb(255, 166, 0);
+    }
+    .azul{
+        color: rgb(21, 5, 233);
+    }
+    </style>
+</head>
+<body>
+    <body style = "background-color: #272b28;">
+    <h1 id="encabezado"  class="rojo">Generos</h1>
+
+    <p id="Parrafo1" class="amarillo">metal alternativo</p>
+    <p id="Periodo" class="azul"> metal industrial</p>
+    <p id="Disco" class="azul">heavy metal</p>
+    <p id="parrafo"   class="amarillo">Neue Deutsche Härte</p>
+    
+
+    <script>
+        console.log('bienvenido a javascript')
+        const encabezadoH1 = document.getElementById("encabezado")
+        const {innerHTML} = encabezadoH1
+        const Parrafo1 = document.getElementById("Parrafo1")
+       
+        console.log(`valor del encabezado: los generos son ${parrafo.innerHTML} , ${Parrafo1.innerHTML} , ${Periodo.innerHTML} , ${Disco.innerHTML}` )
+        console.log(`valor del encabezado: ${innerHTML}`)
+        Parrafo1.innerHTML = 'metal alternativo'
+        console.log(`Genero menos usado de la banda: ${Parrafo1.innerHTML}`)
+        const parrafos = document.getElementsByTagName('p')
+        console.log(`todos los generos: ${parrafos.length}`)
+        for (let i=0; i<parrafos.length; i++){
+console.log(`i: ${i} - ${parrafos[i].innerHTML}`)
+        
+        }
+        const elementos = document.getElementsByClassName('azul')
+        console.log(`Generos mas usados: ${elementos.length}`)
+        for (let i=0; i<elementos.length; i++){
+            console.log(`i: ${i} - ${elementos[i].innerHTML}`)
+        }
+        const elementosP = document.querySelectorAll("p.amarillo")
+        console.log('*********************************************************')
+        for (item of elementosP){
+            console.log(`${item.innerHTML}`)
+        }
+    </script>
+</body>
+</html>
