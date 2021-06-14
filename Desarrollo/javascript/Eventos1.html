@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos</title>
+    <link href="styleeventos.css" rel="stylesheet"/>
+</head>
+<body onload="alerta()">
+    <body style = "background-color: #1ec748;">
+    <h1>Pregunta de seguridad</h1>
+<h2 >Si puedes leer esto simplemente da click a la pregunta, esta te mostrara la respuesta y confirmara que eres un humano</h2>
+
+
+<br/>
+<br/>
+
+    <h1  onmouseup="toGreen(this)" onmousedown="toPink(this)" onclick="ChangeText(this)">¿Quien es el cantante de la banda? </h1>
+
+
+<h3 id="tituloh2">-</h3>
+<br/>
+<H2 onmouseover="toYellow(this)" onmouseout="toRed(this)">Coloque el nombre aqui</H2>
+Nombre:<input type="text" onfocus="tchange(this)" onblur="tbl(this)" onchange="toUpper(this)"/>
+<br/>
+<div id="show"></div>
+<br/>
+<h2 onmouseover="toYellow(this)" onmouseout="toRed(this)" >Agrega tu nombre</h2>
+Nombre:<input type="text" id="nametu"/>
+<script>
+    document.getElementById("nametu").addEventListener("focus", tchange2)
+    document.getElementById("nametu").addEventListener("blur", tbl2)
+    document.getElementById("tituloh2").onclick = ChangeText
+    function ChangeText(){
+        document.getElementById("tituloh2").innerHTML=document.getElementById("tituloh2" ).innerHTML + " Till Lindemann"
+
+    }
+    function alerta(){
+                alert("Esta es una pequeña prueba para demostrar que eres un usuario")
+                let text =""
+                if (navigator.cookieEnabled){
+                    text ="Cookies habilitadas"
+                }else{
+                    text="Cookies inhabilitadas"
+                }
+                document.getElementById("show").innerHTML= text
+            }
+    function toUpper(inputName){
+inputName.value = inputName.value.toUpperCase()
+    }
+    function toYellow(elementh1){
+            elementh1.style.color = 'Yellow'
+        }
+        function toRed(elementh1){
+            elementh1.style.color = 'Red'
+        }
+        function toGreen(elementh1){
+            elementh1.style.color = 'Green'
+        }
+        function toPink(elementh1){
+            elementh1.style.color = 'Pink'
+        }
+        function tchange(elementInput){
+            elementInput.style.background = "blue"
+        }
+        function tbl(elementInput){
+            elementInput.style.background = "white"
+        }
+        function tchange2(event){
+            const element = event.target
+            element.style.background = "blue"
+        }
+        function tbl2(event){
+            const element = event.target
+            element.style.background = "white"
+        }
+</script>
+</body>
+</html>
