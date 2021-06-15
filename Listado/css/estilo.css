@@ -1,0 +1,72 @@
+html{
+    background-color: #7CA327;
+    min-height: 1000px;
+    font-family: "helvetica neue";
+    background: url(toppng.com-rammstein-vector-logo-free-download-400x400.png), #BEF051;
+    background: url(toppng.com-rammstein-vector-logo-free-download-400x400.png),
+        linear-gradient(to left, #7CA327,#6998F0);
+    
+}
+
+h1{
+    color: #F0553A;
+    padding: 10px;
+}
+
+.contenedor{
+    max-width: 400px;
+    margin: 50px auto;
+    background: #A84836;
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px -5px rgb(0, 0, 0, 0.3);
+}
+
+#encabezado{
+    background-color: #E6F069;
+    text-align: center;
+}
+
+.elemento{
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #6998F0;
+}
+.elemento:last-child{
+    border-bottom: 0;
+}
+form{
+    text-align: center;
+    margin-left: 20px;
+}
+button{
+    min-height: 20px;
+    width: 50px;
+    border-radius: 50%;
+    border-color: transparent;
+    background-color: #F0553A(0, 21, 209);
+    color: #BEF051;
+    font-size: 30px;
+    padding-bottom: 6px;
+    border-width: 0;
+}
+
+input[type="text"]{
+    text-align: center;
+height: 60px;
+top: 10px;
+border: none;
+background: transparent;
+font-weight: 200;
+width: 40%;
+}
+
+input[type="text"]:focus{
+    outline: none;
+    box-shadow: inset 0 -3px 0 0 #F0553A;
+}
+
+::placeholder{
+    color: #7CA327;
+    opacity: 1;
+}
