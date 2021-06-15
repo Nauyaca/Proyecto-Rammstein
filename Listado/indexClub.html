@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/estilo.css" rel="stylesheet"/>
+    
+    <title>Listado</title>
+</head>
+<body onload="mostrarMiembros()">
+    <div class="contenedor" id="encabezado">
+        <h1>Miembros del club Rammstein</h1>
+    </div>
+
+    <div class="contenedor">
+        <div class="elemento">
+            <ul id="Miembros">
+               
+            </ul>
+        </div>
+    </div>
+
+    <div class="contenedor">
+        <div style="text-align: center;">
+            <button style="cursor: pointer" onclick="agregarMiembros()">+</button>
+        </div>
+        <form id="formulario">
+            <input type="text" id="nombre" placeholder="Nombre"/>
+            <input type="text" id="apellido" placeholder="Apellido"/>
+        </form>
+    </div>
+
+    <script src="js/persona.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
